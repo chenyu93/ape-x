@@ -42,7 +42,7 @@ class ExperienceBuffer : public ResourceBase
         sum_seg_tree_ = sum_seg_tree;
     }
 
-    std::string DebugString() override {
+    std::string DebugString() const override {
         return "ExperienceBuffer";
     }
     virtual int num_components() const

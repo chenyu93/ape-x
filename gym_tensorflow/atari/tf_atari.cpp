@@ -133,7 +133,7 @@ class AtariEnvironment : public Environment<uint8>, public StepInterface<int>
                 data[i] = ram.get(i);
         }
 
-        string DebugString() override { return "AtariEnvironment"; }
+        string DebugString() const override { return "AtariEnvironment"; }
       private:
         ALEInterface* m_pInterfaces;
         bool m_initialized;
